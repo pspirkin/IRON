@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Абонементи спортивного клубу IRON.">
+    <title>IRON — Абонементи</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container nav-wrapper">
+
+        <a href="index.html" class="logo">IRON<span>.</span></a>
+
+        <nav class="nav" id="mainNav">
+            <a href="index.html" class="nav-link">Головна</a>
+            <a href="workouts.html" class="nav-link">Тренування</a>
+            <a href="membership.html" class="nav-link active">Абонементи</a>
+            <a href="about.html" class="nav-link">Про нас</a>
+        </nav>
+
+        <a href="membership.html" class="header-button">
+            Записатися
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Відкрити меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+</header>
+
+
+<main>
+
+    <section class="page-hero">
+
+        <div class="container">
+
+            <p class="eyebrow reveal">IRON / 03</p>
+
+            <h1 class="page-title reveal">
+                АБОНЕМЕНТИ<span>.</span>
+            </h1>
+
+            <p class="page-description reveal">
+                Обери формат, який відповідає твоїм цілям.
+                Без зайвого — тільки те, що потрібно для прогресу.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="section membership-section">
+
+        <div class="container">
+
+            <div class="pricing-grid">
+
+                <!-- START -->
+                <article class="price-card reveal">
+
+                    <div class="price-header">
+                        <span>01 / START</span>
+
+                        <h2>START</h2>
+
+                        <p>
+                            Базовий доступ для регулярних тренувань.
+                        </p>
+                    </div>
+
+                    <div class="price">
+                        <strong>599</strong>
+                        <span>грн / місяць</span>
+                    </div>
+
+                    <ul class="price-list">
+                        <li>Доступ до залу</li>
+                        <li>Базове обладнання</li>
+                        <li>Роздягальня</li>
+                    </ul>
+
+                    <button
+                        class="price-button choose-plan"
+                        data-plan="START"
+                    >
+                        Обрати
+                    </button>
+
+                </article>
+
+
+                <!-- PRO -->
+                <article class="price-card featured reveal">
+
+                    <div class="recommended">
+                        РЕКОМЕНДОВАНО
+                    </div>
+
+                    <div class="price-header">
+                        <span>02 / PRO</span>
+
+                        <h2>PRO</h2>
+
+                        <p>
+                            Оптимальний варіант для системного прогресу.
+                        </p>
+                    </div>
+
+                    <div class="price">
+                        <strong>899</strong>
+                        <span>грн / місяць</span>
+                    </div>
+
+                    <ul class="price-list">
+                        <li>Повний доступ до залу</li>
+                        <li>Усі тренажери</li>
+                        <li>Групові тренування</li>
+                        <li>Консультація тренера</li>
+                    </ul>
+
+                    <button
+                        class="price-button choose-plan"
+                        data-plan="PRO"
+                    >
+                        Обрати
+                    </button>
+
+                </article>
+
+
+                <!-- ELITE -->
+                <article class="price-card reveal">
+
+                    <div class="price-header">
+                        <span>03 / ELITE</span>
+
+                        <h2>ELITE</h2>
+
+                        <p>
+                            Максимум уваги та персональний підхід.
+                        </p>
+                    </div>
+
+                    <div class="price">
+                        <strong>1499</strong>
+                        <span>грн / місяць</span>
+                    </div>
+
+                    <ul class="price-list">
+                        <li>Повний доступ</li>
+                        <li>Персональний тренер</li>
+                        <li>Індивідуальна програма</li>
+                        <li>Додаткові консультації</li>
+                    </ul>
+
+                    <button
+                        class="price-button choose-plan"
+                        data-plan="ELITE"
+                    >
+                        Обрати
+                    </button>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="dark-section membership-note">
+
+        <div class="container membership-note-grid">
+
+            <div>
+                <p class="eyebrow">ПРОСТО І ЗРОЗУМІЛО</p>
+
+                <h2>
+                    ТВОЄ<br>
+                    <span>РІШЕННЯ.</span>
+                </h2>
+            </div>
+
+            <p>
+                Не знаєш, який тариф обрати?
+                Почни зі START або звернися до нашого тренера.
+                Ми допоможемо визначити формат під твої цілі.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- PLAN MODAL -->
+<div class="modal" id="planModal">
+
+    <div class="modal-overlay"></div>
+
+    <div class="modal-content form-modal">
+
+        <button class="modal-close" aria-label="Закрити">
+            ×
+        </button>
+
+        <span class="modal-label">
+            ЗАПИС / IRON
+        </span>
+
+        <h2>
+            ПОЧНИ ЗАРАЗ
+        </h2>
+
+        <form id="membershipForm" novalidate>
+
+            <div class="form-group">
+                <label for="name">Ім'я</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Ваше ім'я"
+                >
+
+                <small class="error-message" id="nameError"></small>
+            </div>
+
+
+            <div class="form-group">
+                <label for="phone">Телефон</label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+380..."
+                >
+
+                <small class="error-message" id="phoneError"></small>
+            </div>
+
+
+            <div class="form-group">
+                <label for="plan">Обраний тариф</label>
+
+                <select id="plan" name="plan">
+
+                    <option value="">
+                        Оберіть тариф
+                    </option>
+
+                    <option value="START">
+                        START — 599 грн
+                    </option>
+
+                    <option value="PRO">
+                        PRO — 899 грн
+                    </option>
+
+                    <option value="ELITE">
+                        ELITE — 1499 грн
+                    </option>
+
+                </select>
+
+                <small class="error-message" id="planError"></small>
+            </div>
+
+
+            <button type="submit" class="btn btn-primary form-submit">
+                Відправити заявку
+            </button>
+
+            <p id="formSuccess" class="form-success">
+                Дякуємо! Заявку прийнято.
+            </p>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+            <a href="index.html" class="logo">IRON<span>.</span></a>
+
+            <p class="footer-description">
+                Сила. Дисципліна. Результат.
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Навігація</h4>
+            <a href="index.html">Головна</a>
+            <a href="workouts.html">Тренування</a>
+            <a href="membership.html">Абонементи</a>
+            <a href="about.html">Про нас</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Контакти</h4>
+            <p>Львів, Україна</p>
+            <p>+380 67 000 00 00</p>
+            <p>hello@iron.ua</p>
+        </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+        <span>© 2026 IRON. Усі права захищені.</span>
+        <span>Сила починається з дисципліни.</span>
+    </div>
+
+</footer>
+
+
+<button id="backToTop" class="back-to-top" aria-label="Вгору">
+    ↑
+</button>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
