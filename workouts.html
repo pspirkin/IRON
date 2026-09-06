@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Тренування IRON — силові, кардіо, функціональні та розтяжка.">
+    <title>IRON — Тренування</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container nav-wrapper">
+
+        <a href="index.html" class="logo">IRON<span>.</span></a>
+
+        <nav class="nav" id="mainNav">
+            <a href="index.html" class="nav-link">Головна</a>
+            <a href="workouts.html" class="nav-link active">Тренування</a>
+            <a href="membership.html" class="nav-link">Абонементи</a>
+            <a href="about.html" class="nav-link">Про нас</a>
+        </nav>
+
+        <a href="membership.html" class="header-button">
+            Записатися
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Відкрити меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+</header>
+
+
+<main>
+
+    <section class="page-hero">
+        <div class="container">
+
+            <p class="eyebrow reveal">IRON / 02</p>
+
+            <h1 class="page-title reveal">
+                ТРЕНУВАННЯ<span>.</span>
+            </h1>
+
+            <p class="page-description reveal">
+                Обирай напрямок, який відповідає твоїй меті,
+                рівню підготовки та темпу життя.
+            </p>
+
+        </div>
+    </section>
+
+
+    <section class="section workouts-section">
+
+        <div class="container">
+
+            <div class="workout-controls reveal">
+
+                <div class="filter-buttons">
+
+                    <button class="filter-btn active" data-filter="all">
+                        Усі
+                    </button>
+
+                    <button class="filter-btn" data-filter="strength">
+                        Силові
+                    </button>
+
+                    <button class="filter-btn" data-filter="cardio">
+                        Кардіо
+                    </button>
+
+                    <button class="filter-btn" data-filter="functional">
+                        Функціональні
+                    </button>
+
+                    <button class="filter-btn" data-filter="stretching">
+                        Розтяжка
+                    </button>
+
+                </div>
+
+
+                <div class="search-box">
+
+                    <input
+                        type="search"
+                        id="workoutSearch"
+                        placeholder="Знайти тренування..."
+                        aria-label="Пошук тренування"
+                    >
+
+                    <span>⌕</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="workouts-catalog" id="workoutsCatalog">
+
+                <!-- 1 -->
+                <article
+                    class="training-card reveal"
+                    data-category="strength"
+                    data-title="Силова база"
+                    data-training="Силова база"
+                    data-description="Базова силова програма для розвитку основних груп м'язів та правильної техніки."
+                    data-duration="60 хв"
+                    data-level="Початковий"
+                >
+
+                    <div class="training-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=1000&q=85"
+                            alt="Силова база"
+                        >
+
+                        <span class="training-number">01</span>
+                    </div>
+
+                    <div class="training-info">
+                        <span class="training-category">СИЛОВІ</span>
+
+                        <h3>Силова база</h3>
+
+                        <div class="training-meta">
+                            <span>60 хв</span>
+                            <span>Початковий</span>
+                        </div>
+
+                        <p>
+                            Базові вправи для розвитку сили та техніки.
+                        </p>
+
+                        <button class="details-btn">
+                            Детальніше
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- 2 -->
+                <article
+                    class="training-card reveal"
+                    data-category="strength"
+                    data-title="Сильна спина"
+                    data-training="Сильна спина"
+                    data-description="Тренування для зміцнення м'язів спини, покращення стабільності та контролю рухів."
+                    data-duration="50 хв"
+                    data-level="Середній"
+                >
+
+                    <div class="training-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1000&q=85"
+                            alt="Тренування спини"
+                        >
+
+                        <span class="training-number">02</span>
+                    </div>
+
+                    <div class="training-info">
+                        <span class="training-category">СИЛОВІ</span>
+
+                        <h3>Сильна спина</h3>
+
+                        <div class="training-meta">
+                            <span>50 хв</span>
+                            <span>Середній</span>
+                        </div>
+
+                        <p>
+                            Фокус на силі та стабільності спини.
+                        </p>
+
+                        <button class="details-btn">
+                            Детальніше
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- 3 -->
+                <article
+                    class="training-card reveal"
+                    data-category="cardio"
+                    data-title="Кардіо старт"
+                    data-training="Кардіо старт"
+                    data-description="Динамічне тренування для розвитку загальної витривалості та підтримання активного темпу."
+                    data-duration="35 хв"
+                    data-level="Початковий"
+                >
+
+                    <div class="training-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8?auto=format&fit=crop&w=1000&q=85"
+                            alt="Кардіо тренування"
+                        >
+
+                        <span class="training-number">03</span>
+                    </div>
+
+                    <div class="training-info">
+                        <span class="training-category">КАРДІО</span>
+
+                        <h3>Кардіо старт</h3>
+
+                        <div class="training-meta">
+                            <span>35 хв</span>
+                            <span>Початковий</span>
+                        </div>
+
+                        <p>
+                            Розвивай витривалість у комфортному темпі.
+                        </p>
+
+                        <button class="details-btn">
+                            Детальніше
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- 4 -->
+                <article
+                    class="training-card reveal"
+                    data-category="cardio"
+                    data-title="Інтенсивне кардіо"
+                    data-training="Інтенсивне кардіо"
+                    data-description="Інтенсивна кардіосесія для досвідчених відвідувачів, які хочуть працювати над витривалістю."
+                    data-duration="45 хв"
+                    data-level="Просунутий"
+                >
+
+                    <div class="training-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=1000&q=85"
+                            alt="Інтенсивне кардіо"
+                        >
+
+                        <span class="training-number">04</span>
+                    </div>
+
+                    <div class="training-info">
+                        <span class="training-category">КАРДІО</span>
+
+                        <h3>Інтенсивне кардіо</h3>
+
+                        <div class="training-meta">
+                            <span>45 хв</span>
+                            <span>Просунутий</span>
+                        </div>
+
+                        <p>
+                            Високий темп для розвитку витривалості.
+                        </p>
+
+                        <button class="details-btn">
+                            Детальніше
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- 5 -->
+                <article
+                    class="training-card reveal"
+                    data-category="functional"
+                    data-title="Функціональний старт"
+                    data-training="Функціональний старт"
+                    data-description="Повноцінне тренування всього тіла з акцентом на координацію, мобільність та контроль."
+                    data-duration="45 хв"
+                    data-level="Початковий"
+                >
+
+                    <div class="training-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1a?auto=format&fit=crop&w=1000&q=85"
+                            alt="Функціональне тренування"
+                        >
+
+                        <span class="training-number">05</span>
+                    </div>
+
+                    <div class="training-info">
+                        <span class="training-category">ФУНКЦІОНАЛЬНІ</span>
+
+                        <h3>Функціональний старт</h3>
+
+                        <div class="training-meta">
+                            <span>45 хв</span>
+                            <span>Початковий</span>
+                        </div>
+
+                        <p>
+                            Працюй над рухливістю та координацією.
+                        </p>
+
+                        <button class="details-btn">
+                            Детальніше
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- 6 -->
+                <article
+                    class="training-card reveal"
+                    data-category="functional"
+                    data-title="Повне тіло"
+                    data-training="Повне тіло"
+                    data-description="Комплексне тренування, яке залучає основні групи м'язів у межах однієї сесії."
+                    data-duration="55 хв"
+                    data-level="Середній"
+                >
+
+                    <div class="training-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1000&q=85"
+                            alt="Тренування всього тіла"
+                        >
+
+                        <span class="training-number">06</span>
+                    </div>
+
+                    <div class="training-info">
+                        <span class="training-category">ФУНКЦІОНАЛЬНІ</span>
+
+                        <h3>Повне тіло</h3>
+
+                        <div class="training-meta">
+                            <span>55 хв</span>
+                            <span>Середній</span>
+                        </div>
+
+                        <p>
+                            Комплексна робота всього тіла.
+                        </p>
+
+                        <button class="details-btn">
+                            Детальніше
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- 7 -->
+                <article
+                    class="training-card reveal"
+                    data-category="stretching"
+                    data-title="Мобільність"
+                    data-training="Мобільність"
+                    data-description="Спокійна сесія для розвитку рухливості суглобів та покращення контролю рухів."
+                    data-duration="30 хв"
+                    data-level="Будь-який"
+                >
+
+                    <div class="training-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1000&q=85"
+                            alt="Розтяжка"
+                        >
+
+                        <span class="training-number">07</span>
+                    </div>
+
+                    <div class="training-info">
+                        <span class="training-category">РОЗТЯЖКА</span>
+
+                        <h3>Мобільність</h3>
+
+                        <div class="training-meta">
+                            <span>30 хв</span>
+                            <span>Будь-який</span>
+                        </div>
+
+                        <p>
+                            Робота над рухливістю та гнучкістю.
+                        </p>
+
+                        <button class="details-btn">
+                            Детальніше
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- 8 -->
+                <article
+                    class="training-card reveal"
+                    data-category="stretching"
+                    data-title="Відновлення"
+                    data-training="Відновлення"
+                    data-description="Легка програма для розслаблення, відновлення після навантажень та підтримання рухливості."
+                    data-duration="25 хв"
+                    data-level="Будь-який"
+                >
+
+                    <div class="training-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1000&q=85"
+                            alt="Відновлення та розтяжка"
+                        >
+
+                        <span class="training-number">08</span>
+                    </div>
+
+                    <div class="training-info">
+                        <span class="training-category">РОЗТЯЖКА</span>
+
+                        <h3>Відновлення</h3>
+
+                        <div class="training-meta">
+                            <span>25 хв</span>
+                            <span>Будь-який</span>
+                        </div>
+
+                        <p>
+                            Спокійне тренування для відновлення.
+                        </p>
+
+                        <button class="details-btn">
+                            Детальніше
+                        </button>
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <div id="noResults" class="no-results">
+                Тренувань за вашим запитом не знайдено.
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- TRAINING MODAL -->
+<div class="modal" id="trainingModal">
+
+    <div class="modal-overlay"></div>
+
+    <div class="modal-content">
+
+        <button class="modal-close" aria-label="Закрити">
+            ×
+        </button>
+
+        <span class="modal-label">ТРЕНУВАННЯ</span>
+
+        <h2 id="modalTrainingTitle">
+            Назва
+        </h2>
+
+        <div class="modal-details">
+            <span id="modalDuration">60 хв</span>
+            <span id="modalLevel">Початковий</span>
+        </div>
+
+        <p id="modalTrainingDescription">
+            Опис тренування.
+        </p>
+
+        <a href="membership.html" class="btn btn-primary">
+            Записатися
+        </a>
+
+    </div>
+
+</div>
+
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+            <a href="index.html" class="logo">IRON<span>.</span></a>
+            <p class="footer-description">
+                Сила. Дисципліна. Результат.
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Навігація</h4>
+            <a href="index.html">Головна</a>
+            <a href="workouts.html">Тренування</a>
+            <a href="membership.html">Абонементи</a>
+            <a href="about.html">Про нас</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Контакти</h4>
+            <p>Львів, Україна</p>
+            <p>+380 67 000 00 00</p>
+            <p>hello@iron.ua</p>
+        </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+        <span>© 2026 IRON. Усі права захищені.</span>
+        <span>Сила починається з дисципліни.</span>
+    </div>
+
+</footer>
+
+
+<button id="backToTop" class="back-to-top" aria-label="Вгору">
+    ↑
+</button>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
